@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
+"""
+Program extracts the "todo items" from the text file and prints them to stdout.
 
-# program that takes a markdown file as cli input argument and extracts the "todo items"
-# and prints them to stdout.
-# items are marked with a '- [ ]'
-# items scan be marked as done with '- [x]'
-# items can be marked as important with '- [!]'
-# items can be marked as done and important with '- [x] [!]'
-# items can be preceded with whitespaces and newlines
-import argparse
+Convention for items:
+items are marked with a '- [ ]'
+items scan be marked as done with '- [x]'
+items can be marked as important with '- [!]'
+items can be marked as done and important with '- [x] [!]'
+items can be preceded with whitespaces and newlines
+"""
+
 import re
 
 
@@ -123,31 +125,3 @@ def markdown_extractor(filename, stats, sections):
             )
         except ZeroDivisionError:
             print(f"{'0':3s} {'0%':4s} important items done")
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Extract todo items from markdown file"
-    )
-    # positional arguments
-    parser.add_argument("file_name", help="markdown file path")
-
-    # named parameters
-    parser.add_argument(
-        "-s",
-        "--stats",
-        action="store_true",
-        help="display stats",
-        default=False,
-    )
-
-    # named parameters
-    parser.add_argument(
-        "-c",
-        "--chapters",
-        action="store_true",
-        help="display items grouped by important/not important and done/not done",
-        default=False,
-    )
-    args = parser.parse_args()
-    markdown_extractor(args.file_name, args.stats, args.chapters)

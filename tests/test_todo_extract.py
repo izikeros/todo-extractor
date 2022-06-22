@@ -1,5 +1,6 @@
 from unittest import TestCase
-from todo_markdown_extractor import markdown_extractor
+
+from todo_extract import markdown_extractor
 
 
 class Test(TestCase):
