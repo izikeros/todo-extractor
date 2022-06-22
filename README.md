@@ -1,7 +1,7 @@
 # TODO extractor from markdown file
 Python script for extracting TODO notes from text file.
 
-List can be groupped into sections and can be summarized with stats.
+List can be grouped into sections and can be summarized with stats.
 
 
 - [Requirements](#requirements)
@@ -13,17 +13,21 @@ List can be groupped into sections and can be summarized with stats.
 - [License](#license)
 
 
+## Installation
+```
+$ pip install todo-extract
+```
 
 ## Requirements
 The script requires Python3 installed, no other dependencies.
 
 ## Usage
 ```sh
-todo_markdown_extractor.py --help
+$ todo-extract --help
 ```
 
 ```
-usage: todo_markdown_extractor.py [-h] [-s] [-c] file_name
+usage: todo-extract [-h] [-s] [-c] file_name
 
 Extract todo items from markdown file
 
@@ -40,7 +44,7 @@ optional arguments:
 
 ### extraction of bare list, no stats
 ```sh
-$ todo_extractor.py file.md
+$ todo-extract file.md
 ```
 
 output:
@@ -59,7 +63,7 @@ output:
 
 ### extraction of list summarized with stats
 ```sh
-$ todo_extractor.py --stats file.md
+$ todo-extract --stats file.md
 ```
 
 ```
@@ -84,7 +88,7 @@ stats:
 ```
 ### extraction of list divided into sections/chapters
 ```sh
-$ todo_extractor.py --chapters file.md
+$ todo-extract --chapters file.md
 ```
 
 ```
