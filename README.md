@@ -1,5 +1,7 @@
 # TODO extractor from markdown file
-Python script for extracting TODO notes from the group of files in directory, typically - whole project.
+Python script for extracting TODO notes from text file.
+
+List can be groupped into sections and can be summarized with stats.
 
 
 - [Requirements](#requirements)
