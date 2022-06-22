@@ -14,6 +14,10 @@ keywords = ["todo", "todolist", "todo-list","extract-todo"]
 
 requires-python = ">=3.4"
 
+include = [
+"LICENSE",
+]
+
 [project.urls]
 Homepage = "https://github.com/izikeros/todo-extractor"
 
@@ -22,7 +26,7 @@ extract = "todo_extract.main:main"
 
 [tool.poetry]
 name = "todo_extract"
-version = "0.2.0"
+version = "0.2.1"
 description = "Extract TODO items from the text file"
 authors = ["Krystian Safjan <ksafjan@gmail.com>"]
 license = "MIT"
