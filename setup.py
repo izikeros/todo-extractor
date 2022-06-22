@@ -2,8 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name="todo_extract",
-    packages=find_packages(exclude=["tests"]),
     description='Extract TODO items from the text file',
+    author='Krystian Safjan',
+    author_email='ksafjan@gmail.com',
+    url='https://github.com/izikeros/todo-extractor',
+    license='MIT',
+    packages=find_packages(exclude=["tests"]),
+    entry_points={
+        "console_scripts": ["todo-extract=todo_extract.main:main"],
+    },
     long_description="""
 # TODO extractor from markdown file
 Python script for extracting TODO notes from text file.
@@ -125,7 +132,4 @@ $ todo-extract --chapters file.md
 MIT
     """,
     long_description_content_type='text/markdown',
-    entry_points={
-        "console_scripts": ["todo-extract=todo_extract.main:main"],
-    },
 )
