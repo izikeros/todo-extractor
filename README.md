@@ -1,4 +1,4 @@
-# TODO extractor from markdown file
+# TODO extractor from text file
 Python script for extracting TODO notes from text file.
 
 List can be grouped into sections and can be summarized with stats.
