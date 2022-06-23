@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "todo_extract"
-version = "0.2.2"
+version = "0.2.3"
 description = "Extract TODO items from the text file"
 authors = ["Krystian Safjan <ksafjan@gmail.com>"]
 license = "MIT"
@@ -12,13 +12,38 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 keywords = ["todo", "todolist", "todo-list","extract-todo"]
-
+homepage = "https://github.com/izikeros/todo-extractor"
+repository = "https://github.com/izikeros/todo-extractor"
+documentation = "https://github.com/izikeros/todo-extractor"
 
 [tool.poetry.dependencies]
-python = "^3.0"
+python = ">=3.7"
 
 [tool.poetry.dev-dependencies]
+tox = "^3.18"
+pytest = "^7.1"
+pytest-cov = "^3.0"
+mypy = ">=0.960"
+pre-commit = "^2.19.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+py_version = 37
+profile = "black"
+force_single_line = true
+combine_as_imports = true
+lines_between_types = 1
+lines_after_imports = 2
+src_paths = ["src", "tests"]
+extend_skip = ["setup.py"]
+known_third_party = ["poetry.core"]
+
+[tool.black]
+target-version = ['py37']
+preview = true
+force-exclude = '''
+.*/setup\.py$
+'''
