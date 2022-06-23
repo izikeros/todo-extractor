@@ -57,7 +57,7 @@ output:
 - buy pears
 - buy plums
 - buy avocados
-- buy water 
+- buy water
 - [!] buy bread
 ```
 
@@ -75,7 +75,7 @@ $ todo-extract --stats file.md
 - buy pears
 - buy plums
 - buy avocados
-- buy water 
+- buy water
 - [!] buy bread
 
 stats:
@@ -112,7 +112,7 @@ $ todo-extract --chapters file.md
 ==== Important todo items: 2 ====
 
 - buy avocados
-- buy water 
+- buy water
 ```
 ## License
 MIT
