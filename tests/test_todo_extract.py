@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-from unittest import TestCase
 
 from todo_extract import markdown_extractor
 
@@ -12,7 +11,7 @@ def get_project_root() -> Path:
 file_name = get_project_root() / "tests" / "text_with_todos.md"
 
 
-class Test(TestCase):
+class TestExtractor:
     # TODO: KS: 2022-06-23: Parametrize this test
     def test_markdown_extractor__bare(self):
         markdown_extractor(filename=file_name, stats=False, sections=False)

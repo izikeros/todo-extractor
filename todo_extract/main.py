@@ -31,4 +31,6 @@ def main():
     )
 
     args = parser.parse_args()
-    markdown_extractor(args.file_name, args.stats, args.chapters)
+    markdown_extractor(
+        filename=args.file_name, stats=args.stats, sections=args.chapters
+    )

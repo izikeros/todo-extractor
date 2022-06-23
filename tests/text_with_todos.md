@@ -1,6 +1,6 @@
 lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. lorem ipsum dolor sit amet.
 
-Buy snakes: 
+Buy snakes:
 - [ ] buy a bag of chips
 - [ ] buy a bag of cookies
 
@@ -14,7 +14,7 @@ Buy fruits:
   items are in single line
   - [!] buy avocados
 
-  - [!] buy water 
+  - [!] buy water
   - [x] [!] buy bread
 
 Buy equipment [ ] this is not an item.
