@@ -1,3 +1,7 @@
 .idea
 dist
 *.egg-info
+htmlcov
+.tox
+.mypy_cache
+.coverage
