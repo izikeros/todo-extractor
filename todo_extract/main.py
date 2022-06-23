@@ -4,7 +4,7 @@ from . import version
 from .todo_extract import markdown_extractor
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description="Extract todo items from markdown file"
     )
