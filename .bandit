@@ -1,0 +1,3 @@
+[bandit]
+targets: ./todo_extract, ./tests
+skips: B101
