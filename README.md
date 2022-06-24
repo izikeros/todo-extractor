@@ -1,3 +1,12 @@
+<!-- badges -->
+[![python versions](https://img.shields.io/pypi/pyversions/todo_extract.svg)](https://pypi.org/project/todo_extract)
+[![version](https://img.shields.io/pypi/v/todo_extract.svg)](https://pypi.org/project/todo_extract)
+[![codecov](https://codecov.io/gh/izikeros/todo_extract/branch/main/graph/badge.svg)](https://codecov.io/gh/izikeros/todo_extract)
+[![dl](https://img.shields.io/pypi/dm/todo_extract)](https://pypi.org/project/todo_extract)
+[![Black formatter](https://github.com/izikeros/todo-extractor/actions/workflows/black.yml/badge.svg)](https://github.com/izikeros/todo-extractor/actions/workflows/black.yml)
+[![flake8](https://github.com/izikeros/todo-extractor/actions/workflows/flake8.yml/badge.svg)](https://github.com/izikeros/todo-extractor/actions/workflows/flake8.yml)
+<!-- end of badges -->
+
 # TODO extractor from text file
 Python script for extracting TODO notes from text file.
 
