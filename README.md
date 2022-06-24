@@ -6,7 +6,6 @@
 [![Black formatter](https://github.com/izikeros/todo-extractor/actions/workflows/black.yml/badge.svg)](https://github.com/izikeros/todo-extractor/actions/workflows/black.yml)
 [![flake8](https://github.com/izikeros/todo-extractor/actions/workflows/flake8.yml/badge.svg)](https://github.com/izikeros/todo-extractor/actions/workflows/flake8.yml)
 ![License](https://img.shields.io/github/license/izikeros/todo-extractor)
-![GitHub all releases](https://img.shields.io/github/downloads/izikeros/todo-extractor/total)
 ![GitHub contributors](https://img.shields.io/github/contributors/izikeros/todo-extractor)
 <!-- end of badges -->
 
