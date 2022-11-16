@@ -126,4 +126,5 @@ $ todo-extract --chapters file.md
 - buy water
 ```
 ## License
-MIT
+
+[MIT](https://izikeros.mit-license.org/) © [Krystian Safjan](https://safjan.com).
