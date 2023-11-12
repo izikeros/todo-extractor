@@ -1,20 +1,22 @@
 [tool.poetry]
 name = "todo_extract"
-version = "0.2.4"
+version = "0.2.5"
 description = "Extract TODO items from the text file"
-authors = ["Krystian Safjan <ksafjan@gmail.com>"]
-license = "MIT"
+
+authors = [{name="Krystian Safjan", email="ksafjan@gmail.com"}]
+license = { text = "MIT" }
 readme = "README.md"
+
 classifiers = [
+    "Typing :: Typed",
+    "Environment :: Console",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 2",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Topic :: Text Processing",
 ]
 keywords = ["todo", "todolist", "todo-list","extract-todo"]
-homepage = "https://github.com/izikeros/todo-extractor"
-repository = "https://github.com/izikeros/todo-extractor"
-documentation = "https://github.com/izikeros/todo-extractor"
+
 
 [tool.poetry.dependencies]
 python = ">=3.7"
@@ -47,3 +49,7 @@ preview = true
 force-exclude = '''
 .*/setup\.py$
 '''
+
+[project.urls]
+"Source" = "https://github.com/izikeros/todo-extractor"
+"Bug Tracker" = "https://github.com/izikeros/todo-extractor/issues"
